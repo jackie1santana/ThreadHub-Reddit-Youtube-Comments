@@ -1,0 +1,43 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "dev": "(tsc --watch) & NODE_ENV=development ts-node-dev --respawn --transpile-only ./src/server.ts",
+    "dev:debug": "(tsc --watch) & NODE_ENV=development DEBUG=app ts-node-dev --inspect-brk --respawn --transpile-only ./src/server.ts",
+    "prod": "tsc && NODE_ENV=production node ./dist/server.js",
+    "node": "ts-node ./src/server.ts",
+    "lint": "npx eslint .",
+    "lint-fix": "npx eslint ./src/ --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/debug": "^4.1.7",
+    "@types/express": "^4.17.13",
+    "@types/express-session": "^1.17.4",
+    "@types/node": "^16.11.11",
+    "@types/request": "^2.48.7",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "debug": "^4.3.3",
+    "eslint": "^8.4.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2"
+  }
+}
