@@ -11,7 +11,8 @@
     "lint": "npx eslint .",
     "lint-fix": "npx eslint ./src/ --fix",
     "test": "jest",
-    "test-watch": "jest --watchAll"
+    "test-watch": "jest --watchAll",
+    "netlify-build": "cd client && npm install && npm run build-prod"
   },
   "keywords": [],
   "author": "",
