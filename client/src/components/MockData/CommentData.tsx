@@ -27,7 +27,7 @@ export interface IComment {
         comments: [
           {
             avatar: '/verizon2/cm3dam/profile/preprod/2019/10/Mrandompic_158.jpg',
-            comment: 'Test Root Comment1',
+            comment: 'I just watched "Pretty in Pink" last night! Such a great movie. What are your thoughts on John Hughes films?',
             commenterName: 'John Hughes',
             created: '2017-01-01T00:00:00.000Z',
             currentUserId: 'Pat123xyz',
@@ -42,7 +42,7 @@ export interface IComment {
             replies: [
               {
                 avatar: '/verizon2/cm3dam/profile/preprod/2019/10/Mrandompic_158.jpg',
-                comment: 'Test Reply Comment 1',
+                comment: 'I love John Hughes films! "Ferris Bueller\'s Day Off" is my all-time favorite. The way he captures teenage life is just timeless.',
                 commenterName: 'James Cameron',
                 created: '2017-01-01T00:00:00.000Z',
                 currentUserId: 'Pat123xyz',
@@ -57,7 +57,7 @@ export interface IComment {
                 replies: [
                   {
                     avatar: '/verizon2/cm3dam/profile/preprod/2019/10/Mrandompic_158.jpg',
-                    comment: 'Test Reply Comment 1',
+                    comment: 'Totally agree! The characters in "Pretty in Pink" are so relatable. And who can forget the iconic parade scene in "Ferris Bueller\'s Day Off"? Speaking of movies, have you seen "Deja Vu" by Tony Scott? It\'s a mind-bender!',
                     commenterName: 'Tony Scott',
                     created: '2017-01-01T00:00:00.000Z',
                     currentUserId: 'Pat123xyz',
@@ -92,7 +92,7 @@ export interface IComment {
           },
           {
             avatar: '/verizon2/cm3dam/profile/preprod/2019/10/Mrandompic_158.jpg',
-            comment: 'Test Root Comment 2',
+            comment: "Have you had the chance to watch the new Oppenheimer movie yet? It's a must-see for any Nolan fan. I think it's his best work yet. What do you think?",
             commenterName: 'Christopher Nolan',
             created: '2017-01-01T00:00:00.000Z',
             currentUserId: 'Sar123xyz',
@@ -134,5 +134,3 @@ export interface IComment {
       updated: '2017-01-01T00:00:00.000Z',
     },
   };
-  
-  // You can now use mockData as the TypeScript object for your comments.
