@@ -20,6 +20,10 @@ module.exports = {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.scss$/i, // Add this to handle SCSS files
+        use: ['style-loader', 'css-loader', 'sass-loader'], // Include 'sass-loader' for SCSS
+      },
     ],
   },
   resolve: {

@@ -1,0 +1,194 @@
+.thread-main-page-2nd {
+ 
+    .threaded-comments {
+      margin-top: 5rem;
+      margin-bottom: 3rem;
+      // border: 2px solid #f2f2f2;
+      // box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 6px 6px rgba(0, 0, 0, 0.1); 
+           
+        .no-comments-true {
+          background: #dfdfdf;
+          border-radius: 1rem;
+          border: 0.2rem solid #ccc5c5;
+          width: 50%;
+          padding: 2rem;
+          line-height: 2.5rem;
+        }
+
+       .comments-container {
+        margin: 0 4rem;
+   
+
+        .comments-resolved-true {
+          background-color: rgb(153 241 135 / 42%);
+          // border: 0.3rem solid #7ad07ad1;
+          border-radius: 1rem;
+          padding: 1rem;
+          // margin-bottom: 1rem;
+
+          .comment-avatar-timestamp {
+            display: flex;
+          }
+        }
+
+        .comments-resolved-false {
+          // background-color: rgb(153 241 135 / 42%);
+          // border: 0.3rem solid #7ad07ad1;
+          // border-radius: 1rem;
+          // padding: 1rem;
+          // margin-bottom: 1rem;
+
+          .comment-avatar-timestamp {
+            display: flex;
+          }
+        }
+
+        // This is for the replies (avatar and comment info displayed in a row)
+        .comment-right-part {
+          // background-color: rgb(153 241 135 / 42%);
+          // border: 0.3rem solid #7ad07ad1;
+          // border-radius: 1rem;
+          padding: 1rem;
+          margin-bottom: 1rem;
+
+          .comment-avatar-timestamp {
+            display: flex;
+          }
+        }
+      }
+    }
+        
+
+    
+    .comments-title {
+      // font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+    
+    
+    .comment-form-avatar-top {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .form-wrapper {
+      text-align: center;
+    }
+    .comment-form-avatar-bottom {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    
+    .comment-form-image-container {
+      margin-right: 1.2rem;
+      height: 4.9rem;
+      border: 0.1rem solid white;
+      border-radius:50%;
+      box-shadow: 0rem 0rem 0.8rem rgba(0,0,0,0.56);
+      padding: 0.3rem 0.3rem 0 0.3rem;
+      background-color: white;
+    
+    }
+    
+  //   .comment-form-title {
+  //     font-size: 22px;
+  //   }
+    
+  //   .comment-form-textarea {
+  //     width: 100%;
+  //     height: 80px;
+  //     margin-bottom: 8px;
+  //     margin-top: 8px;
+  //     border: 1px solid rgb(107, 114, 12);
+  //   }
+    
+    .comment-form-button {
+      font-size: 1.6rem;
+      padding: 0.8rem 1.6rem;
+      background: rgb(59, 130, 246);
+      border-radius: 0.8rem;
+      color: white;
+    }
+    
+    .comment-form-button:hover:enabled {
+      cursor: pointer;
+      background: rgb(37, 99, 235);
+    }
+    
+    .comment-form-button:disabled {
+      opacity: 0.7;
+      cursor: default;
+    }
+    
+    .comment-form-cancel-button {
+      margin-left: 1rem;
+    }
+    
+    .comment {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0.3rem;
+     
+    }
+    
+    .comment-image-container {
+      margin-right: 1.2rem;
+      border: 0.1rem solid white;
+      border-radius:50%;
+      box-shadow: 0rem 0rem 0.8rem rgba(0,0,0,0.56);
+      padding: 0.35rem 0.35rem 0.35rem 0.35rem;
+      background-color: white;
+    
+    }
+    
+    .comment-image {
+      border-radius:50%;
+      box-shadow: 0rem 0rem 4rem rgb(154 154 154 / 56%);
+      height: 4.1rem;
+      width: 4.1rem;
+    }
+    
+    .comment-right-part {
+      width: 100%;
+    }
+    
+    .comment-content {
+      display: flex;
+    }
+    
+    .comment-author {
+      margin-right: 0.8rem;
+      font-size: 1.5rem;
+      color: rgb(59, 130, 246);
+    }
+    
+    .comment-text {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+    }
+    
+    .comment-actions {
+      display: flex;
+      font-size: 1.8rem;
+      color: rgb(51, 51, 51);
+      cursor: pointer;
+      margin-top: 0.8rem;
+      margin-left: 2rem;
+    }
+    
+    .comment-action {
+      margin-right: 0.8rem;
+      font-size: 1.3rem;;
+    }
+    
+    .comment-action:hover {
+      text-decoration: underline;
+    }
+    
+    .replies {
+      margin-top: 2rem;
+      margin-left: 4rem;
+    }
+}

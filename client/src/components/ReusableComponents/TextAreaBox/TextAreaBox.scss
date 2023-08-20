@@ -1,0 +1,184 @@
+$fullWidth: 100%;
+.text-area-wrapper{
+    width: 50rem;
+    height: auto;
+}
+
+.uploaded-image-container {
+    /* Styles to make the container wrap around the image */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+    
+#desc-textarea-container[data-textAreaTitle]::before{
+    content: attr(data-textAreaTitle);
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+#desc-textarea-container{
+    position: relative;
+    width: 100%;
+
+    .textarea-container {
+        width: 100%;
+    }
+
+    #desc-font-options{
+        height: auto;
+        width: $fullWidth;
+        border: 0.1rem solid lightgray;
+        border-bottom-style: none;
+
+        position: relative;
+        // height: 8rem;
+
+        #getFile {
+            display: none;
+          }
+          
+          .image-middle-divider::before {
+            position: absolute;
+            content: "";
+        }          
+      
+
+            .image-middle-divider {
+                border-left: 0.18rem solid lightgray;
+                position: relative;
+                    
+                // position: absolute;
+                // left: 50%;
+              
+                margin: 0 auto;
+                height: 3rem;
+                margin-top: 0.75rem;
+                // top: 10%;
+                width: 100%;
+        }          
+          
+         
+        .MuiButtonBase-root{
+            background-color: transparent;
+            border: none;
+
+            .MuiSvgIcon-root{
+                font-size: 1.8rem;
+            
+            }
+
+            .uploadIcon{
+                margin-bottom: -1rem;
+                padding: 0.15rem;
+                font-size: 1.5rem;
+                cursor: pointer;
+                }
+
+                @media only screen and (max-width: 1680px) {
+                    .uploadIcon{
+                        margin-bottom: -1rem;
+                        padding: 0.15rem;
+                        }
+                  }
+
+                  @media only screen and (max-width: 1473px) {
+                    .uploadIcon{
+                        margin-bottom: -1rem;
+                        padding: 0.15rem;
+                        }
+                  }
+
+                  
+        }
+
+        .MuiDivider-root{
+            background-color: lightgray;
+        
+        }
+    }
+
+    .text-area-wrapper {
+        width: 50rem;
+        height: auto;
+      }
+      
+      
+      
+    .desc-textarea{
+        width: $fullWidth;
+        border: 0.1rem solid lightgray;
+        border-bottom-style: solid;
+        border-bottom-color:#000;
+        padding: 1rem 0 0 0;
+        outline: none;
+        font-size: 1.5rem;
+        text-indent: 2rem;
+        font-size: 1.3rem;
+        font-family: 'haas';
+        &.bold-text{
+            font-weight: bold;
+        }
+
+        &.italic-text{
+            font-style: italic;
+        }
+
+        &.underlined-text{
+            text-decoration: underline;
+        }
+
+        &.bold-text{
+            font-weight: bold;
+        }
+    }
+    
+    .display-as-input-element {
+        display: grid;
+        grid-template-columns: 1fr 4rem;
+        grid-template-rows: 1fr;
+        height: 3.7rem;
+        overflow: hidden;
+
+        #desc-font-options {
+            border: none;
+            background-color: #FFF;
+            height:3.7rem;
+
+            .MuiToggleButton-root {
+                height:3.7rem;
+            }
+        }
+
+        textarea {
+            height: 3.7rem;
+            max-height: 3.7rem;
+            overflow: hidden;
+            border: none;
+            appearance: none;
+            -webkit-appearance: none;
+            resize: none;
+            white-space: nowrap;
+        }
+    }
+}
+
+#desc-textarea-container[data-numberOfCharacters]:after{
+    content: attr(data-numberOfCharacters);
+    display: flex;
+    justify-content: end;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 88%;
+    right: 3%;
+    color: var(--maxCharacters);
+}
+
+#desc-textarea-container[data-numberOfCharacters].text-area-wrapper-reply:after{
+    content: none;
+}
+// .maxCharacters{
+//     color: red;
+// }
